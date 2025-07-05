@@ -222,10 +222,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 10000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7724,6 +7724,7 @@ GameObject:
   - component: {fileID: 1283107082}
   - component: {fileID: 1283107081}
   - component: {fileID: 1283107080}
+  - component: {fileID: 1283107083}
   m_Layer: 0
   m_Name: Personagem
   m_TagString: Untagged
@@ -7745,6 +7746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: {x: 0, y: 0}
   MoveSpeed: 5
+  isMoving: 0
 --- !u!212 &1283107081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7788,7 +7790,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3761749114884407199, guid: c0a734c04638a73408f78f5c0976eff7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7815,6 +7817,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1283107083
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283107079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eb50dcb59d8cc0342905a4aa58f8ba3f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1453631398
 GameObject:
   m_ObjectHideFlags: 0
